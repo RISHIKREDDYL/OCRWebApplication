@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>OCR Web Application</h1>
+        <div class="upload-section">
+            <select id="langSelect" class="lang-select">
+                <option value="eng">English</option>
+                <option value="hin">Hindi</option>
+                <option value="tel">Telugu</option>
+                <option value="tam">Tamil</option>
+                <option value="eng+hin">English + Hindi</option>
+                <option value="eng+tel">English + Telugu</option>
+                <option value="eng+tam">English + Tamil</option>
+            </select>
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-button">Choose Image</label>
+        </div>
+        <div class="preview-section">
+            <img id="imagePreview" src="#" alt="Preview" style="display: none;">
+        </div>
+        <div class="result-section">
+            <h2>Extracted Text:</h2>
+            <div id="result" class="result-box"></div>
+        </div>
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing image...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
