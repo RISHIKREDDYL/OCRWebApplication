@@ -46,7 +46,7 @@ This web application allows users to perform Optical Character Recognition (OCR)
 
 ### Example
 
-![OCR Example](assets\image.png)
+![OCR Example](assets/image.png)
 
 ## Contributing
 
